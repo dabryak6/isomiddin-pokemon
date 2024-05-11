@@ -83,7 +83,7 @@ function modalShow(id) {
             <div class="right-line">
                 <p class="line-raqam">${obj.stats.attack}</p>
                 <div class="box-line">
-                    <div class="line" style = "--hp :${obj.stats.hp}"></div>
+                    <div class="line" style = "--hp :${obj.stats.attack}"></div>
                 </div>
             </div>
         </li>
@@ -93,7 +93,7 @@ function modalShow(id) {
             <div class="right-line">
                 <p class="line-raqam">${obj.stats.defense}</p>
                 <div class="box-line">
-                    <div class="line" style = "--hp :${obj.stats.hp}"></div>
+                    <div class="line" style = "--hp :${obj.stats.defense}"></div>
                 </div>
             </div>
         </li>
@@ -103,7 +103,7 @@ function modalShow(id) {
             <div class="right-line">
                 <p class="line-raqam">${obj.stats.special_attack}</p>
                 <div class="box-line">
-                    <div class="line" style = "--hp :${obj.stats.hp}"></div>
+                    <div class="line" style = "--hp :${obj.stats.special_attack}"></div>
                 </div>
             </div>
         </li>
@@ -113,7 +113,7 @@ function modalShow(id) {
             <div class="right-line">
                 <p class="line-raqam">${obj.stats.special_defense}</p>
                 <div class="box-line">
-                    <div class="line" style = "--hp :${obj.stats.hp}"></div>
+                    <div class="line" style = "--hp :${obj.stats.special_defense}"></div>
                 </div>
             </div>
         </li>
@@ -123,7 +123,7 @@ function modalShow(id) {
             <div class="right-line">
                 <p class="line-raqam">${obj.stats.speed}</p>
                 <div class="box-line">
-                    <div class="line" style = "--hp :${obj.stats.hp}"></div>
+                    <div class="line" style = "--hp :${obj.stats.speed}"></div>
                 </div>
             </div>
         </li>
