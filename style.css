@@ -211,8 +211,8 @@ body {
 }
 
 .detail-modal .info {
-    width: 1000px;
-    min-height: 700px;
+    width: 500px;
+    max-height: 100vh;
 
     position: absolute;
     background-color: white;
@@ -268,7 +268,6 @@ body {
 
 .pastki-qism {
     width: 100%;
-    min-height: 540px;
     background-color: white;
     margin-top: 100px;
     border-radius: 16px;
@@ -276,7 +275,7 @@ body {
 }
 
 .btn3 {
-    padding: 70px 20px 0px;
+    padding-top: 32px;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -287,10 +286,10 @@ body {
 
 
 .btn2 {
-    font-size: 18px;
+    font-size: 12px;
     border-radius: 4px;
-    min-width: 100px;
-    padding: 4px 8px;
+    min-width: 80px;
+    padding: 4px 4px;
     text-align: center;
     background-color: rgb(116, 203, 72);
     color: white;
@@ -307,9 +306,9 @@ body {
 
 .about {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 12px;
     text-align: center;
-    margin: 16px 0px;
+    margin: 8px 0px;
     color: rgb(116, 203, 72);
 }
 
@@ -325,9 +324,9 @@ body {
 
 .abilities {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 12px;
     text-align: center;
-    margin: 16px 0px;
+    margin: 8px 0px;
     color: rgb(116, 203, 72);
 }
 
@@ -352,15 +351,15 @@ body {
 }
 
 .weight {
-    line-height: 50px;
     display: flex;
     gap: 10px;
+    font-size: 12px;
 }
 
 .height {
-    line-height: 50px;
     display: flex;
     gap: 10px;
+    font-size: 12px;
 }
 
 .kgmi {
@@ -373,9 +372,9 @@ body {
 
 .base-stats {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
-    margin: 16px 0px;
+    margin: 8px 0px;
     color: rgb(116, 203, 72);
 }
 
@@ -389,6 +388,7 @@ body {
     width: 150px;
     text-align: right;
     color: rgb(116, 203, 72);
+    font-size: 16px;
 }
 
 .line-li {
@@ -404,14 +404,14 @@ body {
 }
 
 .box-line {
-    width: 300px;
+    width: 200px;
     background-color: rgba(0, 0, 139, 0.5);
     height: 8px;
     border-radius: 10px;
 }
 
 .line {
-    width: calc(var(--hp) * 3px);
+    width: calc(var(--hp) * 2px);
     height: 8px;
     border-radius: 10px;
     background-color: rgb(0, 0, 139);
@@ -421,6 +421,7 @@ body {
 }
 
 .line-raqam {
+    font-size: 16px;
     min-width: 30px;
     text-align: center;
 }
@@ -437,7 +438,7 @@ body {
     }
 
     100% {
-        width: calc(var(--hp) * 3px);
+        width: calc(var(--hp) * 2px);
     }
 }
 
@@ -472,7 +473,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
     /* body {
         display: block;
     } */
@@ -510,29 +511,22 @@ body {
 
     .pokemon-number {
         position: absolute;
-        right: 3px;
-        top: 2px;
-        font-size: 22px;
-        font-weight: 600;
-        color: rgb(87, 91, 129);
+        right: 12px;
+        top: 4px;
+        font-size: 20px;
     }
 
     .pokemon-name {
-        text-transform: capitalize;
-        font-size: 13px;
-        color: white;
-        margin: 0px 0px 10px;
-        text-align: center;
+        font-size: 12px;
+        margin: 0px 0px 5px;
     }
 
     .btn {
+        padding-top: 10px;
         font-size: 10px;
         border-radius: 4px;
-        border: none;
-        min-width: 50px;
+        min-width: 25px;
         padding: 2px 5px;
-        text-align: center;
-        color: white;
     }
 
     .pokemon-image {
@@ -553,90 +547,73 @@ body {
         height: 100vh;
         top: 0;
         left: 0;
-    
+
         display: none;
     }
-    
+
     .detail-modal.show {
         display: block;
     }
-    
+
     .detail-modal .overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.7);
     }
-    
+
     .detail-modal .info {
-        width: 350px;
-        min-height: 100px;
-    
+        width: 300px;
+        min-height: 100vh;
+
         position: absolute;
-        background-color: white;
-        border-radius: 16px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
+
     .info {
-        text-align: center;
-        opacity: 1;
-        animation-name: fade;
-        animation-duration: 0.5s;
-        background: linear-gradient(135deg, rgb(116, 203, 72) 0%, rgb(164, 62, 158) 100%);
-        max-width: 450px;
-        margin: auto;
-        padding: 5px;
-        border-radius: 10px;
+        max-width: 550px;
         position: relative;
     }
-    
-    
+
+
     .pokemon-nomi {
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 15px;
         color: white;
         margin: 0px 0px 10px;
         text-align: center;
     }
-    
+
     .pokemon-id {
         position: absolute;
-        right: 35px;
-        top: 17px;
-        font-size: 18px;
+        right: 25px;
+        top: 12px;
+        font-size: 17px;
         font-weight: 600;
         color: white;
     }
-    
+
     .pokemon-imge {
-        width: 170px;
-        height: 150px;
+        width: 130px;
+        height: 120px;
         position: absolute;
         left: 28%;
         top: 50px;
-        transform: translateY(-50%);
-        animation-name: loader-animation2;
-        animation-iteration-count: infinite;
-        animation-duration: 1.5s;
-        animation-direction: alternate;
     }
-    
+
     .pastki-qism {
         width: 100%;
-        min-height: 540px;
-        background-color: white;
-        margin-top: 100px;
+        min-height: 370px;
+        margin-top: 80px;
         border-radius: 16px;
         padding-bottom: 24px;
     }
-    
+
     .btn3 {
-        padding: 50px 10px 0px;
+        padding: 20px 5px 0px;
         display: flex;
         -webkit-box-align: center;
         align-items: center;
@@ -644,102 +621,78 @@ body {
         justify-content: center;
         gap: 10px;
     }
-    
-    
+
+
     .btn2 {
-        font-size: 15px;
+        font-size: 13px;
         border-radius: 4px;
-        min-width: 80px;
-        padding: 3px 6px;
-        text-align: center;
-        background-color: rgb(116, 203, 72);
-        color: white;
-        border: none;
+        min-width: 60px;
     }
-    
+
     .btn2.btn2-grass {
         background-color: rgb(116, 203, 72);
     }
-    
+
     .btn2.btn2-poison {
         background-color: rgb(164, 62, 158);
     }
-    
+
     .about {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 13px;
         text-align: center;
-        margin: 16px 0px;
-        color: rgb(116, 203, 72);
+        margin: 5px 0px;
     }
-    
+
     .kg {
         display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        align-items: center;
         gap: 10px;
-        font-size: 15px;
+        font-size: 13px;
     }
-    
+
     .abilities {
-        font-weight: bold;
-        font-size: 15px;
-        text-align: center;
-        margin: 16px 0px;
-        color: rgb(116, 203, 72);
+        font-size: 13px;
+        margin: 5px 0px;
     }
-    
+
     .emotsiyalar {
         display: flex;
         gap: 10px;
-        -webkit-box-pack: center;
-        justify-content: center;
-        font-size: 17px;
+        font-size: 13px;
     }
-    
+
     .loader2 {
         position: absolute;
         z-index: 5;
         top: 0;
         right: 15px;
-        animation-name: loader-animation3;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    
     }
-    
+
     .weight {
-        line-height: 50px;
         display: flex;
         gap: 10px;
     }
-    
+
     .height {
-        line-height: 50px;
         display: flex;
         gap: 10px;
     }
-    
+
     .kgmi {
-        width: 15px;
+        width: 13px;
     }
-    
+
     .uzun {
         text-align: center;
-        font-size: 15px;
+        font-size: 13px;
     }
-    
+
     .base-stats {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 13px;
         text-align: center;
-        margin: 16px 0px;
-        color: rgb(116, 203, 72);
     }
-    
+
     .line-ul {
         padding: 0 8px;
         display: flex;
@@ -747,37 +700,39 @@ body {
         align-items: center;
         gap: 0;
     }
-    
+
     .line-name {
-        border-right: 1px solid black;
-        padding-right: 8px;
+        padding-right: 4px;
+        min-width: 10px;
         width: 110px;
-        text-align: right;
-        color: rgb(116, 203, 72);
         font-size: 12px;
     }
     
+    .line-raqam {
+        font-size: 12px;
+    }
+
     .line-li {
         display: flex;
         align-items: center;
         gap: 4px;
     }
-    
+
     .right-line {
         display: flex;
         align-items: center;
         gap: 12px;
     }
-    
+
     .box-line {
-        width: 150px;
+        width: 110px;
         background-color: rgba(0, 0, 139, 0.5);
         height: 8px;
         border-radius: 10px;
     }
-    
+
     .line {
-        width: calc(var(--hp) * 1.5px);
+        width: calc(var(--hp) * 1.1px);
         height: 8px;
         border-radius: 10px;
         background-color: rgb(0, 0, 139);
@@ -785,12 +740,8 @@ body {
         animation-duration: 1.5s;
         animation-timing-function: linear;
     }
-    
-    .line-raqam {
-        min-width: 20px;
-        text-align: center;
-    }
-    
+
+
     .bosil {
         position: absolute;
         top: 15px;
@@ -801,9 +752,9 @@ body {
         0% {
             width: 0;
         }
-    
+
         100% {
-            width: calc(var(--hp) * 1.5px);
+            width: calc(var(--hp) * 1.1px);
         }
     }
 }
